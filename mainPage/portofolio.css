@@ -1,0 +1,571 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: auto;
+}
+
+#me {
+  background-image: url("../src/WallpaperDog-11017422.jpg");
+}
+#me .navbar .navbar-brand {
+  font-family: fastHand;
+  margin-left: 10px;
+  font-size: 2em;
+  padding: 7px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+}
+#me .navbar .navbar-nav .nav-link {
+  color: azure;
+  font-family: linkStart;
+  letter-spacing: 6px;
+  font-size: 1.6em;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: bold;
+}
+#me .navbar .navbar-nav .nav-link:hover {
+  color: darkred;
+}
+#me .navbar #btnBars {
+  background: transparent;
+  border: transparent;
+  font-size: 1.6em;
+  display: none;
+}
+#me .myProfil {
+  color: rgb(165, 8, 165);
+  height: 700px;
+  text-align: center;
+  position: relative;
+  top: -30%;
+  left: 0%;
+  transform: translate(0%, 35%);
+}
+#me .myProfil .myName {
+  width: 35%;
+  display: block;
+  margin: auto;
+  background-color: #171a21;
+  border: 1px solid black;
+  border-radius: 40px;
+  font-family: emizen;
+  letter-spacing: 6px;
+  font-size: 3.2em;
+}
+#me .myProfil .myJobs {
+  font-size: 1.9em;
+  font-family: olney;
+  color: rgb(0, 0, 87);
+  text-shadow: 1px 2px 0px rgba(92, 11, 0, 0.274);
+}
+
+.aboutMe {
+  background-color: rgb(31, 31, 31);
+}
+.aboutMe .about {
+  padding-top: 5px;
+  color: azure;
+  font-size: 2.1em;
+  text-align: center;
+  font-family: emizen;
+  letter-spacing: 4px;
+}
+.aboutMe #myStory {
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutMe #myStory img {
+  width: 100%;
+  height: auto;
+  height: 600px;
+}
+.aboutMe .meIdentify {
+  color: white;
+  line-height: 65px;
+}
+.aboutMe .meIdentify .describeMe {
+  font-family: olney;
+  font-size: 1.6em;
+  letter-spacing: 2px;
+}
+
+#myProjets {
+  margin: 20px auto;
+  padding: 10px 0px 30px 0px;
+  background-color: rgb(48, 48, 48);
+}
+#myProjets .nameProjet {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+#myProjets #listProjets {
+  margin: 20px auto;
+  text-align: center;
+}
+#myProjets .lienProjets {
+  text-align: center;
+}
+#myProjets .lienProjets .lien {
+  color: azure;
+  font-weight: bold;
+  text-decoration: none;
+}
+#myProjets .lienProjets .lien:hover {
+  color: darkred;
+}
+
+.Capacity {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-image: url(../src/WallpaperDog-17165859.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Capacity .mySuperPower {
+  color: azure;
+  margin: 5px auto;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+.Capacity #myListCapacities {
+  margin: 20px auto;
+}
+.Capacity #myListCapacities .nameFrameworks {
+  color: azure;
+  font-family: linkStart;
+  letter-spacing: 6px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.Capacity #myListCapacities .listFrameworks {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.Capacity #myListCapacities .listFrameworks .langageCode {
+  color: azure;
+  font-size: 1.3em;
+  font-family: olney;
+}
+.Capacity #myListCapacities .listFrameworks .capacityCode {
+  color: azure;
+  font-size: 1.2em;
+}
+.Capacity #myListCapacities .myCV {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.Capacity #myListCapacities .myCV .img-fluid {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+.Capacity #myListCapacities .myCV #btnDownload {
+  width: 45%;
+  padding: 10px;
+  color: azure;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  font-family: olney;
+  border-radius: 40px;
+  border: 1px solid black;
+  background-color: darkred;
+  transition: all 0.25ms ease;
+}
+.Capacity #myListCapacities .myCV #btnDownload:active {
+  transform: translateY(8px);
+}
+.Capacity #myListCapacities .myCV #btnDownload a {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+#myProjets {
+  margin-top: -16px;
+}
+#myProjets .nameProjet {
+  color: azure;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+#myProjets #listProjets .col-lg-4 img.img-fluid {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+#myProjets #listProjets .col-lg-4 img.img-fluid:hover {
+  opacity: 0.5;
+}
+#myProjets .lienProjets .lien {
+  cursor: pointer;
+  font-size: 1.3em;
+  font-family: olney;
+}
+#myProjets .lienProjets .lien:hover {
+  color: darkred;
+}
+
+#contact {
+  margin-top: -20px;
+  padding: 20px;
+  background-image: url(../src/imgContactBackground.jpeg);
+}
+#contact .titleContact {
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: emizen;
+  color: azure;
+}
+#contact .contactModal {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 40px;
+  background-color: black;
+  border: 1px solid black;
+  padding: 20px;
+}
+#contact .contactModal #youContact #contactMe {
+  margin-left: 10px;
+  text-align: center;
+}
+#contact .contactModal #youContact input[type=text],
+#contact .contactModal #youContact textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 710px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+#contact .contactModal #youContact input[type=text]::-moz-placeholder, #contact .contactModal #youContact textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#contact .contactModal #youContact input[type=text]::placeholder,
+#contact .contactModal #youContact textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+#contact .contactModal #youContact textarea {
+  resize: none;
+  height: 200px;
+}
+#contact .contactModal #myListContact {
+  display: block;
+  margin: 15px auto;
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#contact .contactModal #myListContact p {
+  color: azure;
+  font-size: 1.3em;
+  font-family: olney;
+}
+#contact .contactModal #myListContact .fa-regular, #contact .contactModal #myListContact .fa-solid {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.6em;
+  width: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
+}
+#contact .contactModal #myListContact .fa-phone, #contact .contactModal #myListContact .fa-envelope, #contact .contactModal #myListContact .fa-linkedin-in {
+  color: azure;
+}
+#contact .contactModal #myListContact .fa-brands {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.6em;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
+}
+#contact .contactModal #btnSend {
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: darkred;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.25ms ease;
+}
+#contact .contactModal #btnSend:active {
+  transform: translateY(8px);
+  background-color: #075509;
+}
+
+#GameWorld .modal-dialog .modal-content {
+  color: azure;
+  background-image: url(../src/myProjets/steamBackground.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#GameWorld .modal-dialog .modal-content .btn-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#GameWorld .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#GameWorld .modal-dialog .modal-content .modal-header #GameLabel {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 1.6em;
+}
+#GameWorld .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#GameWorld .modal-dialog .modal-content .modal-body .row .col-lg-4 .drivers {
+  font-family: olney;
+  font-size: 1.6em;
+}
+#GameWorld .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages {
+  display: flex;
+  flex-direction: row;
+  line-height: 80px;
+  padding: 10px;
+  justify-content: space-between;
+}
+#GameWorld .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .list .codes {
+  font-size: 1.5em;
+  font-family: linkStart;
+}
+#GameWorld .modal-dialog .modal-content .modal-footer {
+  border: transparent;
+}
+#GameWorld .modal-dialog .modal-content .modal-footer p {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 1.3em;
+  font-family: olney;
+}
+
+#BackWorld .modal-dialog .modal-content {
+  color: azure;
+  background-image: url(../src/myProjets/steamBackground.jpeg);
+}
+#BackWorld .modal-dialog .modal-content .btn-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#BackWorld .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#BackWorld .modal-dialog .modal-content .modal-header #backLabel {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 1.6em;
+}
+#BackWorld .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#BackWorld .modal-dialog .modal-content .modal-body p {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+#Nexus .modal-dialog .modal-content {
+  color: azure;
+  background-image: url(../src/myProjets/steamBackground.jpeg);
+}
+#Nexus .modal-dialog .modal-content .btn-close {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#Nexus .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#Nexus .modal-dialog .modal-content .modal-header #nexusLabel {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 1.6em;
+}
+#Nexus .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#Nexus .modal-dialog .modal-content .modal-body p {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+#sideCanvas {
+  background-color: #171a21;
+  height: 200px;
+}
+#sideCanvas .offcanvas-header .myLogo {
+  font-family: fastHand;
+  margin-left: 10px;
+  font-size: 2em;
+  padding: 7px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+}
+#sideCanvas .offcanvas-header #btnCloseSideCanvas {
+  background: transparent;
+  border: transparent;
+  color: darkred;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+#sideCanvas .offcanvas-body .listCanvas {
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+#sideCanvas .offcanvas-body .listCanvas .canvas-link {
+  width: 100%;
+  text-decoration: none;
+  color: azure;
+  font-family: linkStart;
+  letter-spacing: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1355px) {
+  #me .container-fluid .myProfil .myName {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1175px) {
+  #me .navbar .navbar-nav {
+    display: none;
+  }
+  #me .navbar #btnBars {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  #my-capacity #myListCapacities .nameFrameworks {
+    margin: 10px auto;
+    text-align: center;
+  }
+  #my-capacity #myListCapacities .listFrameworks {
+    justify-content: space-around;
+  }
+  #my-capacity .myCV {
+    display: block;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    max-width: 60%;
+    height: auto;
+  }
+  #myProjets #listProjets img {
+    margin: 10px auto;
+  }
+  #contact .contactModal .row #myListContact {
+    display: flex;
+    flex-direction: row;
+  }
+  #contact .contactModal .row #btnSend {
+    margin-top: 30px;
+  }
+  .langages {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .drivers {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 855px) {
+  #me .container-fluid .myProfil .myName {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 733px) {
+  #me .container-fluid .myProfil .myName {
+    width: 85%;
+  }
+  .myCapacity .row .col-lg-8 .nameFrameworks .listFrameworks #colorCode {
+    color: black;
+  }
+  .myContact #myListContact .fa-regular, .myContact #myListContact .fa-solid, .myContact #myListContact .fa-brands {
+    height: 65%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .myContact #myListContact {
+    align-items: center;
+  }
+  .myContact #myListContact .fa-regular, .myContact #myListContact .fa-solid, .myContact #myListContact .fa-brands {
+    height: 50%;
+    width: 60px;
+  }
+  .myContact #myListContact .fa-regular .fa-phone p, .myContact #myListContact .fa-solid .fa-phone p, .myContact #myListContact .fa-brands .fa-phone p {
+    line-height: -10px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .myContact #myListContact .fa-regular, .myContact #myListContact .fa-solid, .myContact #myListContact .fa-brands {
+    height: 30%;
+  }
+  #sideCanvas .offcanvas-body .listCanvas {
+    width: 80%;
+  }
+}
+@font-face {
+  font-family: emizen;
+  src: url(fonts/Emizen.otf);
+}
+@font-face {
+  font-family: linkStart;
+  src: url(fonts/LinkStart.otf);
+}
+@font-face {
+  font-family: RoundControl;
+  src: url(fonts/RoundControl.otf);
+}
+@font-face {
+  font-family: olney;
+  src: url(fonts/OlneyLigth.otf);
+}
+@font-face {
+  font-family: fastHand;
+  src: url(fonts/FastHand.otf);
+}/*# sourceMappingURL=portofolio.css.map */

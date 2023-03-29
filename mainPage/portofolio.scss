@@ -1,0 +1,713 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: auto;
+}
+
+@mixin flex ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+}
+
+// SECTION ME
+#me {
+  background-image: url("../src/WallpaperDog-11017422.jpg");
+    .navbar {
+    .navbar-brand {
+        font-family: fastHand;
+        margin-left: 10px;
+        font-size: 2.0em;
+        padding: 7px;
+        width: 60px;
+        height: 60px;
+        color: white;
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid black;
+    }
+    .navbar-nav {
+        .nav-link {
+            color: azure;
+            font-family: linkStart;
+            letter-spacing: 6px;
+            font-size: 1.6em;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-weight: bold;
+            &:hover {
+              color: darkred;
+            }
+        }
+    }
+    #btnBars {
+        background: transparent;
+        border: transparent;
+        font-size: 1.6em;
+        display: none;
+    }
+}
+
+.myProfil {
+  color:rgb(165, 8, 165);
+  height: 700px;
+  text-align: center;
+  position: relative;
+  top: -30%;
+  left: 0%;
+  transform: translate(0%, 35%);
+  .myName {
+    width: 35%;
+    display: block;
+    margin: auto;
+    background-color: #171a21;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-family: emizen;
+    letter-spacing: 6px;
+    font-size: 3.2em;
+  }
+  .myJobs {
+      font-size: 1.9em;
+      font-family: olney;
+      color: rgb(0, 0, 87);
+      text-shadow: 1px 2px 0px rgba(92, 11, 0, 0.274);
+    }
+  }
+}
+
+// About Me
+.aboutMe {
+    background-color: rgb(31, 31, 31);
+    .about {
+        padding-top: 5px;
+        color: azure;
+        font-size: 2.1em;
+        text-align: center;
+        font-family: emizen;
+        letter-spacing: 4px;
+    }
+    #myStory {
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+        img {
+          width: 100%;
+          height: auto;
+          height: 600px;
+        }
+      }
+        .meIdentify {
+          color: white;
+          line-height: 65px;
+          .describeMe {
+            font-family: olney;
+            font-size: 1.6em;
+            letter-spacing: 2px;
+            
+          }
+        }
+      }
+    
+
+    #myProjets {
+        margin: 20px auto;
+        padding: 10px 0px 30px 0px;
+        background-color: rgb(48, 48, 48);
+       .nameProjet {
+            text-align: center;
+            font-size: 2.1em;
+            font-weight: bold;
+        }
+       #listProjets {
+        margin: 20px auto;
+        text-align: center;
+        }
+       .lienProjets {
+        text-align: center;
+            .lien {
+                color: azure;
+                font-weight: bold;
+                text-decoration: none;
+                &:hover {
+                    color: darkred;
+                }
+            }
+        }
+    }
+
+// Capacity
+.Capacity {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-image: url(../src/WallpaperDog-17165859.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .mySuperPower {
+    color: azure;
+    margin: 5px auto;
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: emizen;
+  }
+  #myListCapacities {
+    margin: 20px auto;
+    .nameFrameworks {
+      color: azure;
+      font-family: linkStart;
+      letter-spacing: 6px;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .listFrameworks {
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      .langageCode {
+        color: azure;
+        font-size: 1.3em;
+        font-family: olney;
+      }
+      .capacityCode {
+        color: azure;
+        font-size: 1.2em;
+      }
+    }
+    .myCV {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid black;
+      }
+      #btnDownload {
+        width: 45%;
+        padding: 10px;
+        color: azure;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        font-family: olney;
+        border-radius: 40px;
+        border: 1px solid black;
+        background-color: darkred;
+        transition: all 0.25ms ease;
+        &:active {
+          transform: translateY(8px);
+        }
+        a {
+          font-size: 1.3em;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Projets
+#myProjets {
+  margin-top: -16px;
+
+  .nameProjet {
+    color: azure;
+    letter-spacing: 4px;
+    font-family: emizen;
+  }
+
+  #listProjets {
+    .col-lg-4 {
+      img.img-fluid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  .lienProjets {
+    .lien {
+      cursor: pointer;
+      font-size: 1.3em;
+      font-family: olney;
+
+      &:hover {
+        color: darkred;
+      }
+    }
+  }
+}
+
+
+    
+//Contact
+#contact {
+  margin-top: -20px;
+  padding: 20px;
+  background-image: url(../src/imgContactBackground.jpeg);
+  .titleContact {
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: emizen;
+    color: azure;
+  }
+  
+  .contactModal {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 40px;
+    background-color: black;
+    border: 1px solid black;
+    padding: 20px;
+
+    #youContact {
+      #contactMe {
+        margin-left: 10px;
+        text-align: center;
+      }
+      
+      input[type="text"],
+      textarea {
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        width: 100%;
+        max-width: 710px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+      
+      textarea {
+        resize: none;
+        height: 200px;
+      }
+    }
+    
+    #myListContact {
+      display: block;
+      margin: 15px auto;
+      line-height: 45px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: azure;
+        font-size: 1.3em;
+        font-family: olney;
+      }
+        .fa-regular, .fa-solid {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 1.6em;
+            width: 60px;
+            border-radius: 50%;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgb(255, 255, 255);
+        }
+        
+        .fa-phone, .fa-envelope, .fa-linkedin-in {
+            color: azure;
+        }
+      
+        .fa-brands {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 1.6em;
+            width: 60px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgb(255, 255, 255);
+        }
+    }
+    
+    #btnSend {
+      display: block;
+      margin: 0 auto;
+      margin-top: -20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: darkred;
+      color: white;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: all 0.25ms ease;
+      &:active {
+        transform: translateY(8px);
+        background-color: #075509;
+      }
+    }
+  }
+}
+
+// STEAM
+#GameWorld {
+  .modal-dialog {
+    .modal-content {
+      color: azure;
+       background-image: url(../src/myProjets/steamBackground.jpeg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+      .btn-close {
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .modal-header {
+        border: transparent;
+        #GameLabel {
+          letter-spacing: 4px;
+          font-family: emizen;
+          font-size: 1.6em;
+        }
+      }
+      .modal-body {
+        border: transparent;
+        .row {
+          .col-lg-4 {
+            .drivers {
+              font-family: olney;
+              font-size: 1.6em;
+            }
+            .langages {
+              @include flex (row);
+              line-height: 80px;
+              padding: 10px;
+              justify-content: space-between;
+              .list {
+                .codes {
+                  font-size: 1.5em;
+                  font-family: linkStart;
+                }
+              }
+            }
+          }
+        }
+      }
+      .modal-footer {
+        border: transparent;
+        p {
+          margin-right: 15px;
+          margin-left: 15px;
+          font-size: 1.3em;
+          font-family: olney;
+        }
+      }
+    }
+  }
+}
+
+// TESLA
+#BackWorld {
+  .modal-dialog {
+    .modal-content {
+      color: azure;
+      background-image: url(../src/myProjets/steamBackground.jpeg);
+      .btn-close {
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .modal-header {
+        border: transparent;
+        #backLabel {
+          letter-spacing: 4px;
+          font-family: emizen;
+          font-size: 1.6em;
+        }
+      }
+      .modal-body {
+        border: transparent;
+        p {
+          text-align: center;
+          font-size: 1.6em;
+        }
+      }
+      
+    }
+  }
+}
+
+// Mods
+#Nexus {
+  .modal-dialog {
+    .modal-content {
+      color: azure;
+      background-image: url(../src/myProjets/steamBackground.jpeg);
+      .btn-close {
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      .modal-header {
+        border: transparent;
+        #nexusLabel {
+          letter-spacing: 4px;
+          font-family: emizen;
+          font-size: 1.6em;
+        }
+      }
+      .modal-body {
+        border: transparent;
+        p {
+          text-align: center;
+          font-size: 1.6em;
+        }
+      }
+      
+    }
+  }
+}
+
+// Offcanvas
+#sideCanvas {
+  background-color: #171a21;
+  height: 200px;
+  .offcanvas-header {
+    .myLogo {
+      font-family: fastHand;
+        margin-left: 10px;
+        font-size: 2.0em;
+        padding: 7px;
+        width: 60px;
+        height: 60px;
+        color: white;
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid black;
+    }
+    #btnCloseSideCanvas {
+      background: transparent;
+      border: transparent;
+      color: darkred;
+      margin-bottom: 30px;
+      font-size: 2.0em;
+    }
+  }
+  .offcanvas-body {
+    .listCanvas {
+      justify-content: center;
+      list-style-type: none;
+      @include flex (row);
+      column-gap: 48px;
+      .canvas-link {
+        width: 100%;
+        text-decoration: none;
+        color: azure;
+          font-family: linkStart;
+          letter-spacing: 6px;
+          font-size: 1.4em;
+          font-weight: bold;
+      }
+    }
+  }
+}
+
+// Media Querry/Responsive
+@media screen and (max-width: 1355px) {
+  #me {
+    .container-fluid {
+      .myProfil {
+        .myName {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  #me {
+        .navbar {
+            .navbar-nav {
+                display: none;
+            }
+            #btnBars {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #my-capacity {
+      #myListCapacities {
+        .nameFrameworks {
+          margin: 10px auto;
+          text-align: center;
+        }
+        .listFrameworks {
+          justify-content: space-around;
+        }
+      }
+      .myCV {
+        display: block;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        max-width: 60%;
+        height: auto;
+      }
+    }
+    #myProjets {
+      #listProjets {
+        img {
+          margin: 10px auto; 
+        }
+      }
+    }
+
+    #contact {
+      .contactModal {
+        .row {
+          #myListContact {
+            @include flex (row);
+          }
+          #btnSend {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+
+    .langages {
+      display: block;
+      margin: auto;
+      width: 100%;
+   
+  }
+
+  .drivers {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 855px) {
+  #me {
+    .container-fluid {
+      .myProfil {
+        .myName {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 733px) {
+  #me {
+    .container-fluid {
+      .myProfil {
+        .myName {
+          width: 85%;
+        }
+      }
+    }
+  }
+  .myCapacity {
+    .row {
+      .col-lg-8 {
+        .nameFrameworks {
+          .listFrameworks {
+            #colorCode {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .myContact {
+    #myListContact {
+      .fa-regular, .fa-solid, .fa-brands {
+        height: 65%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .myContact {
+    #myListContact {
+      align-items: center;
+      .fa-regular, .fa-solid, .fa-brands {
+        height: 50%;
+        width: 60px;
+        .fa-phone {
+          p {
+            line-height: -10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .myContact {
+    #myListContact {
+      .fa-regular, .fa-solid, .fa-brands {
+        height: 30%;
+      }
+    }
+  }
+
+  #sideCanvas {
+    .offcanvas-body {
+      .listCanvas {
+        width: 80%;
+      }
+    }
+  }
+}
+
+// FONTS
+@font-face {
+  font-family: emizen;
+  src: url(fonts/Emizen.otf);
+}
+
+@font-face {
+  font-family: linkStart;
+  src: url(fonts/LinkStart.otf);
+}
+
+@font-face {
+  font-family: RoundControl;
+  src: url(fonts/RoundControl.otf);
+}
+
+@font-face {
+  font-family: olney;
+  src: url(fonts/OlneyLigth.otf);
+}
+
+@font-face {
+  font-family: fastHand;
+  src: url(fonts/FastHand.otf);
+}
