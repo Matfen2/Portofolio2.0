@@ -396,6 +396,9 @@ body {
 #eaglePC .modal-dialog .modal-content .modal-body {
   border: transparent;
 }
+#eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-8 .img-fluid {
+  height: 400px;
+}
 #eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .drivers {
   font-family: olney;
   font-size: 1.6em;

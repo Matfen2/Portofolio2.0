@@ -445,6 +445,11 @@ body {
       .modal-body {
         border: transparent;
         .row {
+          .col-lg-8 {
+            .img-fluid {
+              height: 400px;
+            }
+          }
           .col-lg-4 {
             .drivers {
               font-family: olney;
