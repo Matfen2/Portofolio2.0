@@ -373,29 +373,52 @@ body {
   font-family: olney;
 }
 
-#BackWorld .modal-dialog .modal-content {
+#eaglePC .modal-dialog .modal-content {
   color: azure;
   background-image: url(../src/myProjets/steamBackground.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-#BackWorld .modal-dialog .modal-content .btn-close {
+#eaglePC .modal-dialog .modal-content .btn-close {
   position: relative;
   top: 10px;
   left: 10px;
 }
-#BackWorld .modal-dialog .modal-content .modal-header {
+#eaglePC .modal-dialog .modal-content .modal-header {
   border: transparent;
 }
-#BackWorld .modal-dialog .modal-content .modal-header #backLabel {
+#eaglePC .modal-dialog .modal-content .modal-header #GameLabel {
   letter-spacing: 4px;
   font-family: emizen;
   font-size: 1.6em;
 }
-#BackWorld .modal-dialog .modal-content .modal-body {
+#eaglePC .modal-dialog .modal-content .modal-body {
   border: transparent;
 }
-#BackWorld .modal-dialog .modal-content .modal-body p {
-  text-align: center;
+#eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .drivers {
+  font-family: olney;
   font-size: 1.6em;
+}
+#eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages {
+  display: flex;
+  flex-direction: row;
+  line-height: 80px;
+  padding: 10px;
+  justify-content: space-between;
+}
+#eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .list .codes {
+  font-size: 1.5em;
+  font-family: linkStart;
+}
+#eaglePC .modal-dialog .modal-content .modal-footer {
+  border: transparent;
+}
+#eaglePC .modal-dialog .modal-content .modal-footer p {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 1.3em;
+  font-family: olney;
 }
 
 #Nexus .modal-dialog .modal-content {

@@ -425,7 +425,10 @@ body {
   .modal-dialog {
     .modal-content {
       color: azure;
-      background-image: url(../src/myProjets/steamBackground.jpeg);
+       background-image: url(../src/myProjets/steamBackground.jpeg);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
       .btn-close {
         position: relative;
         top: 10px;
@@ -433,7 +436,7 @@ body {
       }
       .modal-header {
         border: transparent;
-        #backLabel {
+        #GameLabel {
           letter-spacing: 4px;
           font-family: emizen;
           font-size: 1.6em;
@@ -441,12 +444,36 @@ body {
       }
       .modal-body {
         border: transparent;
-        p {
-          text-align: center;
-          font-size: 1.6em;
+        .row {
+          .col-lg-4 {
+            .drivers {
+              font-family: olney;
+              font-size: 1.6em;
+            }
+            .langages {
+              @include flex (row);
+              line-height: 80px;
+              padding: 10px;
+              justify-content: space-between;
+              .list {
+                .codes {
+                  font-size: 1.5em;
+                  font-family: linkStart;
+                }
+              }
+            }
+          }
         }
       }
-      
+      .modal-footer {
+        border: transparent;
+        p {
+          margin-right: 15px;
+          margin-left: 15px;
+          font-size: 1.3em;
+          font-family: olney;
+        }
+      }
     }
   }
 }
