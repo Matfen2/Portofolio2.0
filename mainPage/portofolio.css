@@ -544,9 +544,11 @@ body {
   }
 }
 @media screen and (max-width: 991px) {
+  #eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages {
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
   #eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .col-lg-6 {
-    -moz-column-gap: 60px;
-         column-gap: 60px;
     line-height: 50px;
   }
 }
