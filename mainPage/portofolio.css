@@ -407,7 +407,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
 }
 #eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .col-lg-6 {

@@ -458,7 +458,7 @@ body {
             .langages {
               @include flex (row);
               padding: 10px;
-              justify-content: space-between;
+              justify-content: center;
               list-style-type: none;
               .col-lg-6 {
                 line-height: 140px;
