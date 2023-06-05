@@ -543,6 +543,11 @@ body {
     text-align: center;
   }
 }
+@media screen and (max-width: 992px) {
+  #eaglePC .modal-dialog .modal-content {
+    height: 600px;
+  }
+}
 @media screen and (max-width: 855px) {
   #me .container-fluid .myProfil .myName {
     width: 70%;
