@@ -447,7 +447,7 @@ body {
         .row {
           .col-lg-8 {
             .img-fluid {
-              height: 400px;
+              height: 480px;
             }
           }
           .col-lg-4 {
@@ -461,6 +461,7 @@ body {
               padding: 10px;
               justify-content: space-between;
               .col-lg-6 {
+                line-height: 30px;
                 .codes {
                   font-size: 1.5em;
                   font-family: linkStart;

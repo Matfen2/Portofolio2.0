@@ -397,7 +397,7 @@ body {
   border: transparent;
 }
 #eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-8 .img-fluid {
-  height: 400px;
+  height: 480px;
 }
 #eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .drivers {
   font-family: olney;
@@ -409,6 +409,9 @@ body {
   line-height: 80px;
   padding: 10px;
   justify-content: space-between;
+}
+#eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .col-lg-6 {
+  line-height: 30px;
 }
 #eaglePC .modal-dialog .modal-content .modal-body .row .col-lg-4 .langages .col-lg-6 .codes {
   font-size: 1.5em;
