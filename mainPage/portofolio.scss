@@ -459,10 +459,12 @@ body {
               @include flex (row);
               padding: 10px;
               justify-content: space-between;
+              list-style-type: none;
               .col-lg-6 {
                 line-height: 140px;
                 .codes {
-                  font-size: 1.5em;
+                  letter-spacing: 3px;
+                  font-size: 1.6em;
                   font-family: linkStart;
                 }
               }
